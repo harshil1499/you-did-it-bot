@@ -28,7 +28,7 @@ ESCALATION_MENTION_IDS = [
 
 # --- Tunable without a code change ---
 PORT = int(os.environ.get("PORT", "8080"))
-ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5")
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 CHECKIN_DAY = os.environ.get("CHECKIN_DAY", "Monday")
 CHECKIN_HOUR_LOCAL = int(os.environ.get("CHECKIN_HOUR_LOCAL", "11"))
 

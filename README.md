@@ -21,7 +21,7 @@ Canonical engineering brief: `checkin-bot-setup-todo-harshil.md` (Venice/Jason).
 - `POST /slack/events` — Slack events + interactivity (acks in <3s, works async).
 - `GET /health` — deploy smoke-check and keep-warm.
 - `POST /tasks/run-checkins` — hourly; opens the Monday 11:00-local check-in DMs.
-- `POST /tasks/sweep-misses` — daily; escalates misses.
+- `POST /tasks/sweep-misses` — hourly; escalates misses (no-ops when nobody is due, so the Tuesday-11:00-local deadline lands correctly across timezones).
 - `POST /tasks/rollup` — weekly; keeps the Sheet's rollup view current.
 
 All `/tasks/*` endpoints require the `X-Scheduler-Secret` header.
