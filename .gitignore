@@ -1,0 +1,15 @@
+# Secrets — never commit. The platform partner injects these as env vars at deploy.
+.env
+*.env
+service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.python-version
+
+# OS
+.DS_Store
